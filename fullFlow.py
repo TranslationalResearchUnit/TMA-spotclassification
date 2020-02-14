@@ -16,7 +16,7 @@ if len (sys.argv) > 2 :
     conf.priority = int(sys.argv[2])
 print(conf.priority)
 
-outFolder = "Z:\GRP Zlobec\GRP Nguyen\TMA\output3\\" + os.path.splitext(os.path.basename(conf.dataName))[0]
+outFolder = "./" + os.path.splitext(os.path.basename(conf.dataName))[0]
 if not os.path.exists(outFolder):
     os.makedirs(outFolder)
 
