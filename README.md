@@ -1,5 +1,7 @@
 # Implementation: Deep learning for classification of colorectal tissue TMA images 
 
+## Method
+<img src="Misc/Figure1.png"></img>
 
 ## Requirements
 - Python 3
