@@ -26,7 +26,7 @@ In order to measure the accuracy and the loss on the Test dataset you need to us
 
 ## Example of result
 
-<img src="images/tensorboard.png"></img>
+<img src="Mics/demo.gif"></img>
 
 
 
