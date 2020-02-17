@@ -1,4 +1,4 @@
-import multiresolutionimageinterface as mir
+from openslide import open_slide
 import cv2
 from matplotlib import pyplot as plt
 import skimage.measure
@@ -15,16 +15,13 @@ import os,sys,time
 
 def getSpotContour(conf,outFolder):
         
-        img = mir.MultiResolutionImageReader().open(conf.dataName)
+        img = open_slide(conf.dataName)
 
         img.getLevelDimensions(1)
-            
-        for i in range(img.getNumberOfLevels()):
-            print("Level", i, "demension", img.getLevelDimensions(i),"down factor",img.getLevelDownsample(i))
-
+                   
         level = 7
-        levelDimensions = img.getLevelDimensions(level)
-        patch = img.getUCharPatch(0, 0, levelDimensions[0],levelDimensions[1],level)
+        levelDimensions = img.level_dimensions[level]
+        patch = img.read_region((0, 0), level, (levelDimensions[0],levelDimensions[1]))
 
         plt.imsave(outFolder+"\level"+str(level)+".png", patch)
 
