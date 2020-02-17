@@ -14,8 +14,8 @@
    
 ## Train
 
-    $> python train.py -h
-    $> python train.py dataset/
+    $> python train.py <dataset> [<output>]  (in folder capsnet). Thanks to the implementation of https://github.com/thibo73800/capsnet-traffic-sign-classifier
+    $> python train_network.py --dataset <dataset> (in folder CNN). 
 
 During the training, the checkpoint is saved by default into the outputs/checkpoints/ folder. The exact path and name of the checkpoint is print during the training.
 
