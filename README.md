@@ -21,9 +21,9 @@ During the training, the checkpoint is saved by default into the outputs/checkpo
 
 ## Test
 
-In order to measure the accuracy and the loss on the Test dataset you need to used the test.py script as follow:
+In order to run a test, editing Utils/config.py with the path of training output model and using script as follow:
 
-    $> python test.py outputs/checkpoints/ckpt_name dataset/ 
+    $> python fullFlow.py 
 
 
 ## Example of result
