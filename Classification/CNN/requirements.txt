@@ -4,4 +4,4 @@ scikit-learn == 0.20.3
 imutils == 0.5.2
 opencv-python == 4.1.0.25
 docopt == 0.6.2
-opencv-contrib-python ==  4.1.0.25
+opencv-contrib-python == 4.2.0.32
